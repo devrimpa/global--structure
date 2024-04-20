@@ -1,0 +1,486 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-size: 19px;
+    line-height: 1.66em;
+    font-weight: 500;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+p{
+    margin: 0 0 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0 0 25px;
+    line-height: 1.5em;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #000;
+    font-family: "DM Sans", sans-serif;
+}
+
+h1{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 36px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+h3 span{
+    color:aquamarine;
+}
+
+h4{
+    font-size: 27px;
+}
+
+h5{
+    font-size: 22px;
+}
+
+h6{
+    font-size: 20px;
+}
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+li:last-child{
+    margin: 0 0 20px;
+}
+
+
+img{
+    max-width: 100%;
+    display: inline-block;
+}
+
+blockquote{
+    margin: 0 0 20px;
+    background-color: aliceblue;
+    padding: 20px 20px 20px 30px;
+    border-left: 4px solid #333; 
+}
+
+a{
+    color:#1171ee;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+}
+
+a:hover{
+    color:antiquewhite;
+}
+
+.global-primary-button{
+    display:inline-block;
+    background-color: rgb(91, 78, 104);
+    padding: 15px 30px;
+    text-transform: uppercase;
+    border: 1px solid rgb(91, 78, 104);
+    color:aliceblue;
+    font-weight: 700;
+}
+
+.global-primary-button:hover{
+    background-color: rgb(22, 2, 41);
+    border: 1px solid rgb(22, 2, 41);
+    color:aliceblue;
+}
+
+.global-secondary-button{
+    display: inline-block;
+    background-color: transparent;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    border: 1px solid #333;
+    color: #333;
+    font-weight: 700;
+}
+
+.global-secondary-button:hover{
+    background-color: rgb(250, 203, 142);
+    border: 1px solid  rgb(250, 203, 142);
+    color:#000;
+}
+
+.global-tertiry-button{
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.global-tertiry-button:hover{
+    color:#000;
+}
+
+.global-tertiry-button i{
+    vertical-align: middle;
+    margin-left: 6px;
+}
+
+.banner{
+    padding: 50px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section-spacing{
+    background-color: rgb(142, 193, 238);
+}
+
+.text-center{
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.column-6 {
+    width: 50%;
+    padding: 0 15px;
+}
+
+.column-12 {
+    width: 100%;
+    padding: 0 15px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+input[type="password"], 
+input[type="url"], 
+input[type="date"] {
+    width: 100%;
+    height: 40px;
+    padding: 10px 18px;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 22px;
+    font-family: "Poppins";
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px 18px;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 22px;
+    resize: none;
+    font-family: "Poppins";
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+
+input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 36px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #528dad;
+    transition: all .4s ease-in-out;
+}
+
+input[type="checkbox"]:checked + label::after {
+    background-color: #528dad;
+}
+
+input[type="checkbox"] + label::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    z-index: 2;
+    width: 5px;
+    height: 13px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+
+input[type="checkbox"]:checked + label::before {
+    opacity: 1;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    padding: 15px 34px;
+    background-color: #528dad;
+    border: 1px solid #528dad;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 100px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #0ea1f0;
+    border-color: #0ea1f0;
+    color: #ffffff;
+}
+
+
+input[type="radio"] {
+    display: none;
+}
+
+
+input[type="radio"] + label {
+    position: relative;
+    padding-left: 36px;
+    cursor: pointer;
+}
+
+input[type="radio"] + label::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #528dad;
+    transition: all .4s ease-in-out;
+}
+
+input[type="radio"]:checked + label::after {
+    background-color: #528dad;
+}
+
+input[type="radio"] + label::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    z-index: 2;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+
+input[type="radio"]:checked + label::before {
+    opacity: 1;
+}
+
+@media (max-width: 1199px){
+    body{
+        font-size: 17px;
+        line-height: 1.4em;
+    }
+    .container{
+        max-width: 960px;
+    }
+
+    h1{
+        font-size: 36px;
+    }
+    
+    h2{
+        font-size: 33px;
+    }
+    
+    h3{
+        font-size: 27px;
+    }
+    
+    h4{
+        font-size: 23px;
+    }
+    
+    h5{
+        font-size: 19px;
+    }
+    
+    h6{
+        font-size: 18px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{
+        margin: 0 0 12px;
+    }
+
+    .global-primary-button,
+    .global-secondary-button{
+        padding: 12px 20px;
+    }
+
+    .form-check,
+    .form{
+        margin: 0 0 15px;
+    }
+}
+
+@media (max-width: 991px){
+    .container{
+        max-width: 720px;
+    }
+
+
+    textarea{
+        height: 120px;
+    }
+}
+
+@media (max-width: 767px){
+    body{
+        font-size: 15px;
+    }
+
+    .banner{
+        padding: 35px 0;
+    }
+    .container{
+        max-width: 540px;
+    }
+
+    h1{
+        font-size: 33px;
+    }
+    
+    h2{
+        font-size: 27px;
+    }
+    
+    h3{
+        font-size: 23px;
+    }
+    
+    h4{
+        font-size: 20px;
+    }
+    
+    h5{
+        font-size: 18px;
+    }
+    
+    h6{
+        font-size: 16px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{
+        margin: 0 0 15px;
+    }
+
+    .column-6{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 575px){
+    .container{
+        max-width: 100%;
+    }
+
+    .global-primary-button, 
+    .global-secondary-button {
+        padding: 7px 15px;
+    }
+
+    .global-primary-button, 
+    .global-secondary-button,
+    .global-tertiry-button{
+        margin: 0 105px 12px 0;
+    }
+
+    input[type="text"], 
+    input[type="email"], 
+    input[type="tel"], 
+    input[type="password"], 
+    input[type="url"], 
+    input[type="date"] {
+        height: 37px;
+        padding: 10px;
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+
+    input[type="submit"]{
+        padding: 8px 22px;
+    }
+
+    input[type="checkbox"] + label::after,
+    input[type="radio"] + label::after{
+        width: 20px;
+        height: 20px;
+    }
+
+    textarea {
+        height: 90px;
+    }
+
+    input[type="checkbox"] + label::before{
+        top: 2px;
+        left: 7px;
+    }
+
+    input[type="radio"] + label::before {
+        top: 7px;
+        left: 7px;
+    }
+
+    
+}
